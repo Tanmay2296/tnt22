@@ -1,0 +1,16 @@
+table, th, td {
+    border: 1px solid black;
+}
+h1{
+    font size:5;
+    color:red;
+    text-align:center;
+}
+
+div{
+    text-align:center;
+}
+
+p{
+    text-align:center;
+}
