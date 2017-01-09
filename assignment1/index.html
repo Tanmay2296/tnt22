@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html>
-<head><center><font size="5" color="red">MY FRIENDS</font></center>
+<div><head><font size="5" color="red">MY FRIENDS</font></head></div>
 
-    <link rel="stylesheet" type="text/css" href="app.css">
+<link rel="stylesheet" type="text/css" href="app.css">
 </head>
 <body bgcolor="aqua">
-
 <table style="width:100%">
     <tr>
         <th>Firstname</th>
@@ -30,17 +29,19 @@
 </table>
 <h1>Your Details</h1>
 <div>
-    <form action="demo_form.asp" method="get" target="_blank">
-        Name:<input type="text"
-                    name="firstname"><br><br>
+    <form onSubmit="register()">
+        Name:<input type="text" id="first-name"
+                    name="first-name" required><br><br>
 
-        email:<input name="email" type="characters"><br><br>
-        Age:<input name="integer" type="integer"> <br> <br>
+        email:<input name="email" id="email" type="text" required><br><br>
+        Age:<input name="age" id="age" type="text" required> <br> <br>
         <input type="Submit" value="OK">
         <input type="reset">
+        <p><span>user inputs</span><p id="results"></p></p>
     </form>
 </div>
 <p><strong>Note: Please enter the correct details</strong></p>
 
+</script>
 </body>
 </html>
